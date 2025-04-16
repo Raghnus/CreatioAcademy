@@ -533,7 +533,11 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
-	<ItemGroup Label="Entity Files" />
+	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/UsrRealty/Schemas/UsrCarBodyType/UsrCarBodyType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrRealty/Schemas/UsrCarBodyType/UsrCarBodyType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrRealty/Schemas/UsrTipoAuto/UsrTipoAuto.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrRealty/Schemas/UsrTipoAuto/UsrTipoAuto.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrRealty/Schemas/UsrTipoCarro/UsrTipoCarro.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrRealty/Schemas/UsrTipoCarro/UsrTipoCarro.cs')" />
+	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">
 		<Message Importance="High" Text="*********** Project [$(MSBuildProjectFile)] TargetFramework [$(TargetFramework)] CoreTargetFramework [$(CoreTargetFramework)]" />

@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "886bd1f6-2cbd-4cdf-bcb5-e177c8775437",
+    "Name": "UsrTipoCarro",
+    "ModifiedOnUtc": "\/Date(1744767024000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Tipo Carro"
+  }
+}
